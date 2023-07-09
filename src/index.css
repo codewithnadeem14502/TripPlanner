@@ -76,11 +76,11 @@ input {
   background-color: #5a3e2b;
   color: #ffebb3;
   padding: 4rem 0;
-
+  height: 250px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -130,5 +130,10 @@ input[type="checkbox"] {
   background-color: #76c7ad;
   text-align: center;
   font-weight: 700;
-  padding: 3.2rem 0;
+  padding: 2rem 0;
+}
+.copyright {
+  background-color: yellow;
+  text-align: center;
+  font-weight: 200;
 }
