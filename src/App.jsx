@@ -12,6 +12,13 @@ function App() {
   function handleAddItems(item) {
     setItems((items) => [...items, item]);
   }
+  function DeleteItemList(id) {
+    const confirmed = window.confirm(
+      "Are you sure you want to delete all items?"
+    );
+
+    if (confirmed) setItems([]);
+  }
   function handleDelete(id) {
     setItems((items) => items.filter((items) => items.id !== id));
   }
@@ -29,6 +36,7 @@ function App() {
       <PackageList
         items={items}
         onDeleteItem={handleDelete}
+        onDeleteItemList={DeleteItemList}
         onToggle={handleToggle}
       />
       <Status items={items} />
