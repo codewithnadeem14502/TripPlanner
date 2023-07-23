@@ -137,3 +137,28 @@ input[type="checkbox"] {
   text-align: center;
   font-weight: 200;
 }
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  h1 {
+    font-size: 6rem;
+    word-spacing: 20px;
+    letter-spacing: -3px;
+    padding: 2rem 0;
+  }
+
+  .add-form {
+    flex-direction: column;
+  }
+
+  .list {
+    height: auto;
+    padding-left: 30px;
+  }
+
+  .list ul {
+    width: 100%;
+  }
+}
